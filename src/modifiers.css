@@ -1,0 +1,25 @@
+
+.large-art_description {
+  font-size: calc(.9rem + .3vw);
+  margin-bottom: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+input.form-control {
+  position: absolute;
+  width: 450PX;
+}
+
+@media (min-width:1400px){
+
+  .container {
+    max-width: 1080px;
+  }
+}
+
+@media (min-width:1200px){
+
+  .container {
+    max-width: 1080px;
+  }
+}
