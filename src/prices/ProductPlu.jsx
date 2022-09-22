@@ -2,7 +2,7 @@ import React from "react";
 
 export const ProductPlu = ({product = null}) => {
 
-  const unit = product && product.is_plu ? 'Unidad: Kg' : ' '
+  const unit = product && product.is_plu ? 'Unidad: Kg' : ' ';
   
   const newString = unit.padStart(40, ' ');
 
@@ -28,8 +28,8 @@ export const ProductPlu = ({product = null}) => {
                 : "h4 text-white text-start"
             }
             >{`: ${product.art_des}`}</h2>
-          <h2 className="h4 text-white text-start">{`: ${product.precioFormated}${newString}`}</h2>
-          <h2 className="h4 text-white text-start">{`: ${product.pesoFormated}${newString}`}</h2>
+          <h2 className="h4 text-white text-start">{`: ${product.precioFormated} ${newString}`}</h2>
+          <h2 className="h4 text-white text-start">{`: ${product.pesoFormated}`}</h2>
           <h2 className="h4 text-white text-start">{`: ${product.totalFormated} USD`}</h2>
           <h2 className="h4 text-white text-start">{`: ${product.precioBsFormated} Bs`}</h2>
         </div>
